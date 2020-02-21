@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.CardView"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/head_info"
+                    android:text="ORG : " />
+
+                <TextView
+                    android:id="@+id/org_view"
+                    style="@style/res_info"
+                    tools:text="ORG" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/head_info"
+                    android:text="IP : " />
+
+                <TextView
+                    android:id="@+id/ip_view"
+                    style="@style/res_info"
+                    tools:text="IP" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/head_info"
+                    android:text="PORT : " />
+
+                <TextView
+                    android:id="@+id/port_view"
+                    style="@style/res_info"
+                    tools:text="Port : " />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/head_info"
+                    android:text="CITY : " />
+
+                <TextView
+                    android:id="@+id/city_view"
+                    style="@style/res_info"
+                    tools:text="City : " />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/head_info"
+                    android:text="COUNTRY : " />
+
+                <TextView
+                    android:id="@+id/country_view"
+                    style="@style/res_info"
+                    tools:text="Country : " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/head_info"
+                    android:text="ISP : " />
+
+                <TextView
+                    android:id="@+id/isp_view"
+                    style="@style/res_info"
+                    tools:text="ISP : " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/head_info"
+                    android:text="DATA : " />
+
+
+                <TextView
+                    android:id="@+id/data_view"
+                    style="@style/res_info"
+                    tools:text="Data" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
