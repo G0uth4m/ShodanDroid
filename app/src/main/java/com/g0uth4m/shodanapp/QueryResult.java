@@ -16,7 +16,6 @@ import java.util.ArrayList;
 
 public class QueryResult extends AppCompatActivity {
 
-//    public static String searchUrl = "https://api.shodan.io/shodan/host/search?key=UhlhLWzJ45vQ6lJAjHtTJpfeksVkxQmI&query=";
     public static String searchUrl = "https://api.shodan.io/shodan/host/search?key=";
 
     @Override
