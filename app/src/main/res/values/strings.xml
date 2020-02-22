@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ShodanDroid</string>
     <string name="search">Search</string>
+    <string name="api_key_input">Enter shodan api key</string>
 </resources>

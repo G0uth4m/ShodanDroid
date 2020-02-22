@@ -16,7 +16,8 @@ import java.util.ArrayList;
 
 public class QueryResult extends AppCompatActivity {
 
-    public static String searchUrl = "https://api.shodan.io/shodan/host/search?key=UhlhLWzJ45vQ6lJAjHtTJpfeksVkxQmI&query=";
+//    public static String searchUrl = "https://api.shodan.io/shodan/host/search?key=UhlhLWzJ45vQ6lJAjHtTJpfeksVkxQmI&query=";
+    public static String searchUrl = "https://api.shodan.io/shodan/host/search?key=";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class QueryResult extends AppCompatActivity {
         setContentView(R.layout.activity_query_result);
 
         String query = getIntent().getStringExtra("query");
+        String api_key = getIntent().getStringExtra("api_key");
 
 
         if (isNetworkConnected()) {
@@ -34,7 +36,7 @@ public class QueryResult extends AppCompatActivity {
             progressBar.setVisibility(View.VISIBLE);
 
             SearchAsyncTask task = new SearchAsyncTask();
-            task.execute(searchUrl + query);
+            task.execute(searchUrl + api_key + "&query=" + query);
         } else {
             TextView textView1 = findViewById(R.id.info);
             textView1.setText("No Internet connection");
